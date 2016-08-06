@@ -64,7 +64,7 @@ private:
 
     static bool IsQuestion(const string& tellBob)
     {
-        return tellBob.back() == '?';  //.end(); //.EndsWith("?");
+        return tellBob.back() == '?';
     }
 
     static string FilterNonAlpha(const string& str)
@@ -85,14 +85,8 @@ private:
     }
 
     // String constants.
-    //static constexpr const char* STRING = "some useful string constant";
     static constexpr const char* defaultReply = "Whatever.";
     static constexpr const char* silenceReply = "Fine. Be that way!";
     static constexpr const char* yellingReply = "Whoa, chill out!";
     static constexpr const char* questionReply = "Sure.";
-
-    /*static const string defaultReply = "Whatever.";
-    const string silenceReply = "Fine. Be that way!";
-    const string yellingReply = "Whoa, chill out!";
-    const string questionReply = "Sure.";*/
 };
